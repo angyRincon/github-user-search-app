@@ -4,11 +4,22 @@
     --emphasis-blue: #111528;
     --dark-blue: #141c2f;
     --pale-blue: #202c4c;
+    --link-blue: #1178ef;
     --light-blue: #087cfc;
-    --link-blue: #0163d7;
-    --light-grey: #c2c2c2;
     --pale-grey: #9b9b9b;
+    --light-grey: #c2c2c2;
     --white: #ffffff;
+}
+
+.light-mode {
+    --pale-blue: #b0b0b0;
+    --emphasis-blue: #d9d9d9;
+    --light-blue: #e8e8e8;
+    --dark-blue: #fff;
+    --pale-grey: #111528;
+    --white: #141c2f;
+    --link-blue: #0961b7;
+    --light-grey: #313b6c;
 }
 
 * {
@@ -25,6 +36,7 @@ body {
     justify-content: center;
     align-self: center;
     align-items: center;
+    transition: all 0.3s;
 }
 
 .container {
@@ -52,6 +64,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: all 1s;
 }
 
 .header button i {
