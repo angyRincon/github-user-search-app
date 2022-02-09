@@ -1,23 +1,29 @@
-const Details = () => (
+const Details = ({location, twitter_username, blog, company}) => (
     <div className='details'>
         <div className='details-box'>
             <i className="fa-solid fa-location-dot"/>
-            <span>San Francisco</span>
+            <span>{ location ? location : 'Not Available' }</span>
         </div>
 
         <div className='details-box'>
             <i className="fa-brands fa-twitter"/>
-            <span>Not Available</span>
+            <span>
+                { twitter_username ? twitter_username : 'Not Available' }
+            </span>
         </div>
 
         <div className='details-box'>
             <i className="fa-solid fa-paperclip"/>
-            <span>https://github.blog</span>
+            <span>
+                { blog ? blog : 'Not Available' }
+            </span>
         </div>
 
         <div className='details-box'>
             <i className="fa-solid fa-building"/>
-            <span>@github</span>
+            <span>
+                { company ? company : 'Not Available' }
+            </span>
         </div>
     </div>
 )

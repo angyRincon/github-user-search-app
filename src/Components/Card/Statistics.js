@@ -1,18 +1,18 @@
-const Statistics = () => (
+const Statistics = ({ public_repos, followers, following }) => (
     <div className="statistics">
         <div className='statistics-box'>
             <h6>Repos</h6>
-            <span>8</span>
+            <span>{public_repos}</span>
         </div>
 
         <div className='statistics-box'>
             <h6>Followers</h6>
-            <span>3938</span>
+            <span>{followers}</span>
         </div>
 
         <div className='statistics-box'>
             <h6>Following</h6>
-            <span>9</span>
+            <span>{following}</span>
         </div>
     </div>
 )

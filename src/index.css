@@ -9,6 +9,7 @@
     --pale-grey: #9b9b9b;
     --light-grey: #c2c2c2;
     --white: #ffffff;
+    --red: red;
 }
 
 .light-mode {
@@ -41,7 +42,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+    grid-template-columns: repeat(1, 670px);
     grid-auto-flow: dense;
 }
 
@@ -177,6 +178,7 @@ body {
     color: var(--light-grey);
 }
 
+
 .card .box a {
     color: var(--link-blue);
     text-decoration: none;
@@ -218,6 +220,10 @@ body {
     margin-top: 30px;
 }
 
+.card .box .details .details-box {
+    position: relative;
+}
+
 .card .box .details .details-box i {
     color: var(--white);
     margin-right: 15px;
@@ -229,3 +235,17 @@ body {
     color: var(--light-grey);
     font-size: 12px;
 }
+
+.card .box .details .details-box:nth-child(1),
+.card .box .details .details-box:nth-child(3) {
+    position: relative;
+    color: var(--light-grey);
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+

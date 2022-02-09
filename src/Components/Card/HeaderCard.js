@@ -1,13 +1,17 @@
-const HeaderCard = () => (
+import {dateFormat} from "../../utils/format-date";
+
+const HeaderCard = ({name, created_at, login, bio}) => (
     <>
         <div className='title'>
-            <h3>The Octocat</h3>
-            <h5>Joined 25 Jan 2011</h5>
+            <h3>{ name }</h3>
+            <h5>{ dateFormat(created_at) }</h5>
         </div>
 
-        <a href="/">@octocat</a>
-        <p>This profile has no bio</p>
+        <a href="/">@{ login }</a>
+        <p>
+            { bio ? bio : 'This profile has no bio' }
+        </p>
     </>
-)
+);
 
 export default HeaderCard;
