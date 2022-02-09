@@ -157,10 +157,14 @@ body {
     border-radius: 10px;
     margin-top: 20px;
     padding: 40px 35px;
-    grid-gap: 20px;
     grid-auto-flow: dense;
     box-shadow: var(--shadow-smoke);
     transition: all 0.3s;
+}
+
+.box-3 {
+    grid-column: span 1/3;
+    margin-top: -30px;
 }
 
 .card .box img {
@@ -182,7 +186,6 @@ body {
     color: var(--light-grey);
 }
 
-
 .card .box a {
     color: var(--link-blue);
     text-decoration: none;
@@ -191,7 +194,6 @@ body {
 
 .card .box p {
     color: var(--pale-grey);
-    margin-top: 20px;
     font-size: 14px;
     line-height: 19px;
 }
@@ -236,8 +238,7 @@ body {
 }
 
 .card .box .details .details-box span,
-.card .box .details .details-box a
-{
+.card .box .details .details-box a {
     color: var(--light-grey);
     font-size: 12px;
 }
@@ -252,6 +253,44 @@ body {
     text-overflow: ellipsis;
 }
 
+@media (max-width: 780px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+    }
 
+    .card {
+        grid-gap: 20px;
+    }
+
+    .box-3 {
+        grid-column: span 2/3;
+        margin-top: 0;
+    }
+
+    .card .box .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 370px);
+    }
+
+    .card .box .details {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .card .box .details .details-box span,
+    .card .box .details .details-box a
+    {
+        font-size: 14px;
+    }
+}
 
 

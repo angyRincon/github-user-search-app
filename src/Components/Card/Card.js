@@ -13,9 +13,10 @@ const Card = ({user}) => {
             </div>
 
             <div className='box'>
-
                 <HeaderCard {...user} />
+            </div>
 
+            <div className='box box-3'>
                 <p>
                     { user.bio ? user.bio : 'This profile has no bio' }
                 </p>
