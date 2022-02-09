@@ -16,6 +16,10 @@ const Card = ({user}) => {
 
                 <HeaderCard {...user} />
 
+                <p>
+                    { user.bio ? user.bio : 'This profile has no bio' }
+                </p>
+
                 <Statistics {...user} />
 
                 <Details {...user} />

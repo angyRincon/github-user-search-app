@@ -172,7 +172,7 @@ body {
 .card .box .title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     color: var(--white);
     margin-bottom: 3px;
 }
