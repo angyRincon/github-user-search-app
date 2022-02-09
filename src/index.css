@@ -8,6 +8,7 @@
     --light-blue: #087cfc;
     --pale-grey: #9b9b9b;
     --light-grey: #c2c2c2;
+    --background: #ffffff;
     --white: #ffffff;
     --red: red;
 }
@@ -15,10 +16,10 @@
 .light-mode {
     --pale-blue: #b0b0b0;
     --emphasis-blue: #d9d9d9;
-    --light-blue: #e8e8e8;
+    --light-blue: #087cfc;
     --dark-blue: #fff;
     --pale-grey: #111528;
-    --white: #141c2f;
+    --background: #141c2f;
     --link-blue: #0961b7;
     --light-grey: #313b6c;
 }
@@ -53,7 +54,7 @@ body {
 }
 
 .header h4 {
-    color: var(--white);
+    color: var(--background);
     font-size: 18px;
     font-weight: 700;
     transition: all 1s;
@@ -62,7 +63,7 @@ body {
 .header button {
     border: none;
     background-color: transparent;
-    color: var(--white);
+    color: var(--background);
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
@@ -101,19 +102,19 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    color: var(--white);
+    color: var(--background);
     width: 70%;
 }
 
 .search input::placeholder {
-    color: var(--white);
+    color: var(--background);
 }
 
 .search button {
     overflow: hidden;
     position: relative;
     border: none;
-    color: var(--white);
+    color: var(--background);
     background-color: var(--light-blue);
     text-transform: capitalize;
     padding: 12px 20px;
@@ -169,7 +170,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--white);
+    color: var(--background);
     margin-bottom: 3px;
 }
 
@@ -183,7 +184,6 @@ body {
     color: var(--link-blue);
     text-decoration: none;
     font-size: 14px;
-    pointer-events: none;
 }
 
 .card .box p {
@@ -210,7 +210,7 @@ body {
 }
 
 .card .box .statistics .statistics-box span {
-    color: var(--white);
+    color: var(--background);
     font-weight: 700;
 }
 
@@ -225,13 +225,15 @@ body {
 }
 
 .card .box .details .details-box i {
-    color: var(--white);
+    color: var(--background);
     margin-right: 15px;
     margin-bottom: 9px;
     font-size: 15px;
 }
 
-.card .box .details .details-box span {
+.card .box .details .details-box span,
+.card .box .details .details-box a
+{
     color: var(--light-grey);
     font-size: 12px;
 }
