@@ -14,3 +14,5 @@ Q
 !src/Components/Card/Statistics.js,b\f\bfae912ff58835677394109734b802724f5f0b7c
 Q
 !src/Components/Card/HeaderCard.js,4\c\4c2561019afef71b79f5b878d17432aa4a612dff
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
