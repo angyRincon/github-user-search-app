@@ -278,7 +278,7 @@ body {
 @media (max-width: 520px) {
     .container {
         display: grid;
-        grid-template-columns: repeat(1, 370px);
+        grid-template-columns: repeat(1, 330px);
     }
 
     .card .box .details {
@@ -291,6 +291,12 @@ body {
     {
         font-size: 14px;
     }
+
+    .search input {
+        font-size: 12px;
+        margin-left: -10px;
+    }
+
 }
 
 
